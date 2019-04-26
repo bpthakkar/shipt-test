@@ -8,7 +8,26 @@
 This is tested on MySQL so if you are testing on different database it may not work (e.g. doesn't work for sqlite)
 - Refer query_test.sql file with all the queries
 
-### Assignment 3: API Testing 
+### Assignment 3: API Automation  
+
+##### Questions 
+
+1. If you chose to use a tool or language other than the recommended, briefly explain why.
+> Not Applicable 
+2. How do you debug a failed test in your test framework?
+> I would perform following steps to debug the failure (not in perticular order)
+> - Check the locator is not changed
+> - Browser console to confirm any java script exception 
+> - Application log to check the exception
+> - Database query to confirm the data 
+> - Refer source code 
+3. What do you believe are the most common causes for instability in UI automation?
+> locator changes or requirement changes and timeout errors very common issues causes false positives 
+> 
+4. How do you make your tests consistent and easy to debug?
+> User reusable library functions, Parameterization, follow the source directroy structure, Add print/debug log statement 
+
+
 
 Follow the instructions to the test
 
@@ -17,7 +36,7 @@ Follow the instructions to the test
 ```
 Bhargavs-MacBook-Pro:shipt-test bhargav$ source venv/bin/activate
 ```
-3. To run the command 
+3. To run the test from command line
 
 ```
 (venv) Bhargavs-MacBook-Pro:shipt-test bhargav$ pytest
